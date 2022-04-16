@@ -1,0 +1,1 @@
+[![Build Status](https://app.travis-ci.com/sujith15/patBughunt.svg?branch=master)](https://app.travis-ci.com/sujith15/patBughunt) [![Coverage Status](https://coveralls.io/repos/github/sujith15/patBughunt/badge.svg?branch=master)](https://coveralls.io/github/sujith15/patBughunt?branch=master)
