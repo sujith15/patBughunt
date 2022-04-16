@@ -1,0 +1,17 @@
+
+jdk: openjdk8
+
+name: Coveralls GitHub Action
+uses: coverallsapp/github-action@1.1.3
+
+
+sudo: false
+script:
+  - mvn clean
+  - mvn evosuite:generate
+  - mvn evosuite:export
+  - mvn test
+
+after_success:
+  - mvn clean cobertura:cobertura coveralls:report
+  - mvn clean test jacoco:report coveralls:report
