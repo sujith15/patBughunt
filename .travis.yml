@@ -11,6 +11,8 @@ script:
   - mvn evosuite:generate
   - mvn evosuite:export
   - mvn test
+  - mvn jacoco:report
+  - mvn coveralls:report
 
 after_success:
   - mvn clean cobertura:cobertura coveralls:report
